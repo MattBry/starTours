@@ -13,6 +13,6 @@ export class ItemDetailsPage {
   constructor(nav, navParams) {
     this.nav = nav;
     // If we navigated to this page, we will have an item available as a nav param
-    this.selectedItem = navParams.get('item');
+    this.planet = navParams.get('planet');
   }
 }

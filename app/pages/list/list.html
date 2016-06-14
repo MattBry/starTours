@@ -6,7 +6,7 @@
 </ion-navbar>
 
 <ion-content>
-  <ion-card *ngFor="let planet of planets">
+  <ion-card *ngFor="let planet of planets" (click)="itemTapped($event, planet)">
   <img src="http://fillmurray.com/200/100"/>
   <ion-card-content>
     <ion-card-title>

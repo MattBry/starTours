@@ -421,9 +421,10 @@ export class ListPage {
             "url": "http://swapi.co/api/planets/21/"
         }];
   }
-  itemTapped(event, item) {
+  itemTapped(event, planet) {
+    console.log("planet tapped")
      this.nav.push(ItemDetailsPage, {
-       item: item
+       planet: planet
      });
   }
   // ngOnInit() {
