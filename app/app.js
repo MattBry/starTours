@@ -23,8 +23,8 @@ class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Log in', component: LoginPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Log out', component: LoginPage },
+      { title: 'Destination list', component: ListPage }
     ];
 
     // make HelloIonicPage the root (or first) page

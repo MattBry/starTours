@@ -1,11 +1,11 @@
 <ion-navbar *navbar>
-  <button menuToggle>
-    <ion-icon name="menu"></ion-icon>
-  </button>
   <ion-title>Destinations</ion-title>
 </ion-navbar>
 
 <ion-content>
+  <button primary outline full menuToggle>
+    View menu
+  </button>
   <ion-card *ngFor="let planet of planets" (click)="itemTapped($event, planet)">
   <img src="http://fillmurray.com/200/100"/>
   <ion-card-content>

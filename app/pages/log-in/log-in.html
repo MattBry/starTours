@@ -19,12 +19,9 @@
   </ion-item>
   <ion-item>
     <ion-label primary>Password</ion-label>
-    <ion-input type="password"></ion-input>
+    <ion-input placeholder="usetheforce" type="password"></ion-input>
   </ion-item>
   </ion-list>
-  <p>
-    <button primary outline>Register</button>
-    <button primary (click)="signIn($event)">Log in</button>
-  </p>
-
+  <button primary full outline>Register</button>
+  <button primary full (click)="signIn($event)">Log in</button>
 </ion-content>
