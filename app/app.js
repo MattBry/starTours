@@ -3,7 +3,8 @@ import {ionicBootstrap, Platform, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {LoginPage} from './pages/log-in/log-in';
 import {ListPage} from './pages/list/list';
-
+import { HTTP_PROVIDERS } from '@angular/http';
+import { PlanetService } from './services/planet.service';
 
 @Component({
   templateUrl: 'build/app.html',
@@ -47,4 +48,4 @@ class MyApp {
   }
 }
 
-ionicBootstrap(MyApp);
+ionicBootstrap(MyApp, [HTTP_PROVIDERS, PlanetService]);
