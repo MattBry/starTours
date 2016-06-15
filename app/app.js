@@ -4,6 +4,7 @@ import {StatusBar} from 'ionic-native';
 import {LoginPage} from './pages/log-in/log-in';
 import {ListPage} from './pages/list/list';
 import { HTTP_PROVIDERS } from '@angular/http';
+import { HTTP_BINDINGS } from '@angular/http';
 import { PlanetService } from './services/planet.service';
 
 @Component({
@@ -48,4 +49,4 @@ class MyApp {
   }
 }
 
-ionicBootstrap(MyApp, [HTTP_PROVIDERS, PlanetService]);
+ionicBootstrap(MyApp, [HTTP_PROVIDERS, HTTP_BINDINGS, PlanetService]);

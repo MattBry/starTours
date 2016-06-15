@@ -3,9 +3,7 @@ import { Http } from '@angular.http';
 import { PLANETS } from './planets.js';
 @Injectable()
 export class PlanetService {
-  constructor(){
-  	this.planetList = PLANETS;
-  }
+  constructor(){  }
   getPlanets() {
 	return Promise.resolve(PLANETS);
   }
